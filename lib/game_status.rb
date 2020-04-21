@@ -26,3 +26,8 @@ def draw?(board)
     true
   end
 end
+def over?(board)
+  if draw?(board) || won?(board)
+    true
+  end
+end
