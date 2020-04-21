@@ -31,6 +31,6 @@ def over?(board)
     true
   end
 end
-if won?(board) != false
+if won?(board) != falsey
   return board[won?(board)[0]]
 end
