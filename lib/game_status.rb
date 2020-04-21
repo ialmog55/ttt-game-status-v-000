@@ -20,3 +20,4 @@ def full?(board)
   if board.none? {|i| i==" " || i==""|| i==nil}
     true
   end
+end
