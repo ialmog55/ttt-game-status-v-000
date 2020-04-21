@@ -27,11 +27,14 @@ def draw?(board)
   end
 end
 def over?(board)
-  if draw?(board)
+  if draw?(board) || won?(board)
     true
-  elsif won?(board)
-      return board[won?(board)[0]]
-    else
+  end
+end
+def winner(board)
+  if won?(board)
+    return board[won?(board)[0]]
+  elsif over?(board)
       return nil
   end
 end
