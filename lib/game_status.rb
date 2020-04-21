@@ -27,7 +27,7 @@ def draw?(board)
   end
 end
 def over?(board)
-  if draw?(board) 
+  if draw?(board)
     true
   elsif won?(board)
       return board[won?(board)[0]]
